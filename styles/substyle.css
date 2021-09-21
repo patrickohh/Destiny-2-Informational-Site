@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    font-family : "Titillium Web",sans-serif;
+    margin:0;
+}
+
+/*Navigation bar style*/
+.menubar {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+/*Menu bar elements styles*/
+.menubar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+  
+/*Aligns element to right side*/
+.menubar a.right {
+    float: right;
+}
+  
+/*Styles menu bar elements when hoevering over them*/ 
+.menubar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Ref:https://stackoverflow.com/questions/19256982/horizontal-scroll-css;
+Styles side scrollers on items and classes pages*/
+.sidescroller {
+    position: relative;
+    margin: auto;
+    width:480px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+/*Styles captions on images in items and classes pages*/
+.caption {
+    color:#33cccc;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom:10px;
+    width: 50%;
+    text-align: left;
+}
+
+/*-----------------------------------ACTIVITIES PAGE-------------------------------------------------------------*/
+
+/*Styling of activities page header*/
+.headerAct{
+    padding: 200px;
+    text-align: center;
+    background-image: url("../images/act.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    height:500px;
+    border-bottom-style: solid;
+    border-bottom-width:10px;
+    border-bottom-color:#ff6600;
+}
+/*Styling of activity header font*/
+.headerAct h1{
+    font-size: 60px;
+    color:black;
+}
+/*Styling of strikes section*/
+.firstSet {
+    padding:40px;
+    text-align: left;
+}
+/*Styling of crucible section*/
+.secondSet {
+    padding:40px;
+    text-align: right;
+}
+/*Styling of open world missions section*/
+.thirdSet {
+    padding:40px;
+    text-align: left;
+}
+/*Styling of raids section*/
+.fourthSet {
+    padding:40px;
+    text-align: right;
+}
+/*Adding border to video in second section*/
+.secondSet iframe {
+    border-style: solid;
+    border-width: 5px;
+    border-color:#ffcc00;
+}
+/*Adding border to video in third section*/
+.thirdSet iframe {
+    border-style: solid;
+    border-width: 5px;
+    border-color:#cc0000;
+}
+/*Adding border to video in fourth section*/
+.fourthSet iframe {
+    border-style: solid;
+    border-width: 5px;
+    border-color:#ffcc00;
+}
+/*Adding border to video in first section*/
+.firstSet iframe {
+    border-style: solid;
+    border-width: 5px;
+    border-color:#cc0000;
+}
+
+/*DIVIDER STYLING FOR PAGES - Ref:https://codepen.io/chilliconcode/pen/epQORa, 
+Found a template online for a custom divider but obviously modified it to fit my needs*/
+
+/*Sets div to certain color as well as font of the div*/
+.color-block {
+    background:#ffcc00;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:#cc0000;
+}
+
+/*Sets div to certain color as well as font of the div*/
+.white-block {
+    background:#cc0000;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:#ffcc00;
+}
+
+/*Ref:https://www.w3schools.com/css/css3_gradients.asp; Gives the effect of counter-clockwise slant 
+by utilizing linear-gradient property to change to another color at a certain angle*/
+.skew2{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, #ffcc00 49%, #cc0000 50%),    linear-gradient(-50deg, #cc0000 16px, #000 0);
+}
+
+/*Ref:https://www.w3schools.com/css/css3_gradients.asp; Gives the effect of clockwise slant 
+by utilizing linear-gradient property to change to another color at a certain angle*/   
+.skew1{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #cc0000 49%, #ffcc00 50%);
+}
+
+/*--------------------------------CLASSES PAGE--------------------------------------------------------------------------*/
+
+/*Styling of classes page header*/
+.classHeader {
+    padding: 200px;
+    text-align: center;
+    background-image: url("../images/classes.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: white;
+    height: 500px;
+    border-bottom-style: solid;
+    border-bottom-width:10px;
+    border-bottom-color:#737373;
+}
+
+/*Styling of header font*/
+.classHeader h1{
+    font-size: 60px;
+}
+/*Styling of class page sections*/
+.classSet {
+    padding:40px;
+    text-align:center;
+}
+/*Ref:https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a-ul-to-center-with-the-text;
+Style list to be in the center*/
+.classSet ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/*Stlyling of form*/
+.survey {
+    padding:40px;
+    text-align: left;
+}
+
+/*Styling of labels on form*/
+.survey label {
+    display: block;
+}
+/*Stlying of images in scrollbox*/
+.slides {
+    height:300px;
+    display: inline-block;
+    width:300px;
+}
+
+/*Styling of video in scrollbox*/
+.slides2 {
+    height: 300px;
+    display: inline-block;
+    width:480px;
+}
+
+/*Divider Styling used for Classes Page, same as the template used for previous sub-page*/
+
+.color-block-C {
+    background:#ff0000;
+    width:100%;
+    padding:7% 20% 7% 20%;
+    color:black;
+}
+.white-block-C {
+    background:#737373;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:black;
+}
+
+.skew2-C{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, #ff0000 49%, #737373 50%),    linear-gradient(-50deg, #737373 16px, #000 0);
+}
+  
+.skew1-C{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #737373 49%, #ff0000 50%);
+}
+
+/*--------------------------------ITEMS PAGE--------------------------------------------------------------------------*/
+
+/*Styling of header of item page*/
+.itemHeader {
+    padding: 200px;
+    text-align: center;
+    background-image: url("../images/items.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffdb4d;
+    height: 500px;
+    border-bottom-style: solid;
+    border-bottom-width:10px;
+    border-bottom-color:#ffd11a;
+}
+
+/*Stlying of font in header*/
+.itemHeader h1{
+    font-size: 60px;
+}
+/*Styling of images in weapons section*/
+.slides1 {
+    height:200px;
+    display: inline-block;
+    width:400px;
+}
+/*Styling of images in armor section*/
+.slides3 {
+    height:400px;
+    display: inline-block;
+    width:400px;
+}
+
+/*Divider Styling used for Items Page, same as the template used for previous sub-page*/
+
+.color-block-I {
+    background:#5900b3;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:#ffd11a;
+}
+.white-block-I {
+    background:#ffd11a;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:#5900b3;
+}
+
+.skew2-I{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, #5900b3 49%, #ffd11a 50%),    linear-gradient(-50deg, #ffd11a 16px, #000 0);
+}
+
+.skew1-I{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #ffd11a 49%, #5900b3 50%);
+}
+/*Styling of item sections*/
+.item {
+    padding:40px;
+    text-align: left;
+}
+
+/*--------------------------------BUY PAGE--------------------------------------------------------------------------*/
+
+/*Styling of header in buy subpage*/
+.buyHeader {
+    padding: 200px;
+    text-align: center;
+    background-image: url("../images/buy.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #e6b800;
+    height: 500px;
+    border-bottom-style: solid;
+    border-bottom-width:10px;
+    border-bottom-color:#ff6600;
+}
+
+/*Styling of header font*/
+.buyHeader h1{
+    font-size: 60px;
+}
+/*Styling of sections in subpage*/
+.buySet {
+    padding:40px;
+    text-align: left;
+}
+/*Styling of font in header of each section*/
+.buySet h2 {
+    font-size: 40px;
+}
+
+/*Ref:https://www.w3schools.com/cssref/pr_dim_line-height.asp; sets line-height 
+property so text overflows horizontally. Also styles scroll box*/
+.scroll {
+    width:300px;
+    height:300px;
+    line-height:3em;
+    overflow:auto;
+    padding:5px;
+    position:relative;
+    right:50px;
+    left:60px;
+}
+
+/*Styles images in scrollbox to stack horizontally*/
+.scroll img {
+    display: block;
+}
+
+/*Divider Styling used for Items Page, same as the template used for previous sub-page*/
+
+.color-block-B {
+    background:#004d99;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:#ff6600;
+}
+.white-block-B {
+    background:#ff6600;
+    width:100%;
+    padding:7% 20% 10% 20%;
+    color:#004d99;
+}
+
+.skew2-B {
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, #004d99 49%, #ff6600 50%),    linear-gradient(-50deg, #ff6600 16px, #000 0);
+}
+
+.skew1-B {
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #ff6600 49%, #004d99 50%);
+}
+
+/*Ref:https://www.w3schools.com/howto/howto_css_download_button.asp; 
+Styling of download button*/
+.downbutton {
+    background-color:#4d4dff;
+    border:none;
+    color:white;
+    padding: 12px 30px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+/*Ref:https://www.w3schools.com/howto/howto_css_download_button.asp;
+Styling of download button when hovering over it*/
+.downbutton:hover {
+    background-color:#8080ff;
+}
+
+
+
+

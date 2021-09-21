@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <link rel="stylesheet" href="styles/homestyle.css">
+        <!--Ref:https://fonts.google.com/?selection.family=Titillium+Web; Used to add new fonts to page-->
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+        <title>
+            D2 Website: Homepage
+        </title>
+        <meta charset="UTF-8">
+        <!--Referenced: https://www.w3schools.com/howto/howto_website.asp; Here the meta method is set for
+            the webpage itself to be scaled for all device resolutions-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script src="scripts/projectJava.js"></script>
+        <!--Ref:https://www.w3schools.com/howto/howto_website.asp; Horizontal navigation bar with links to other
+            pages-->
+        <div class="menubar">
+             <a href = "index.html">Home</a>
+             <a href = "actpage.html">Activities</a>
+             <a href = "classes.html">Classes</a>
+             <a href = "items.html">Items</a>
+             <a href = "buynow.html" class = "right">Buy Now</a>
+        </div> 
+        <!--Ref:https://www.w3schools.com/howto/howto_js_slideshow.asp; Each div holds an image
+            as well as a animation class when switching to different images-->     
+        <div class = "image-carousel">
+                <div id="slide1" class="mySlides fade">
+                    <!--Ref:https://www.w3schools.com/html/html_images.asp; Changed image size-->
+                    <img src="images/moon.jpg" width="1440" height="550">
+                    <div class="caption">[1]</div>
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="images/hunterstrike.jpg" width="1440" height="550">
+                    <div class="caption">[2]</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/titanhammer.jpg" width="1440" height="550">
+                    <div class="caption">[3]</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/gamecover.jpg" width="1440" height="550">
+                    <div class="caption">[4]</div>  
+                </div>
+                    
+                <!-- Ref:https://www.w3schools.com/howto/howto_js_slideshow.asp;
+                    Buttons to go to next or previous picture -->
+                <a class="prev" onclick="add(-1)">&#10094;</a>
+                <a class="next" onclick="add(1)">&#10095;</a>
+                <!-- Ref:https://www.w3schools.com/howto/howto_js_slideshow.asp;
+                     Dots and circles at bottom of slideshow, which can be used to
+                    navigate through show -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="current(1)"></span>
+                    <span class="dot" onclick="current(2)"></span>
+                    <span class="dot" onclick="current(3)"></span>
+                    <span class="dot" onclick="current(4)"></span>   
+                </div>
+        </div>
+        <div class = "header">
+            <h1>D2 Info-Base</h1>
+            <p>A site to get you started on the MMORPG and FPS of Destiny 2</p>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="firstSet">
+            <h2>About the Game</h2>
+            <p>
+                Destiny 2 is an MMORPG and FPS made by the gaming company Bungie.
+                It combines fluid first person shooter mechanics with the fun of an 
+                open world RPG. 
+            </p>
+            <br/>
+        </div>
+        <div class="secondSet">
+            <h2>Developer</h2>
+            <p>
+                Developer of the game is a company called Bungie who are also famous
+                for developing the hit game franchise of Halo.
+            </p>
+            <!--Ref:https://www.w3schools.com/html/html_youtube.asp; Embedding a video into a page-->
+            <iframe width="550" height="350"
+                src="https://www.youtube.com/embed/mEvVKCKdtfw">
+            </iframe>
+        </div>
+        <br/>
+        <div class="thirdSet">
+            <h2>Cited Images and Video</h2>
+            <p>
+                Cites for images and video used on homepage:
+                <br/>
+                <br/>
+                Background image for homepage: Moon's Haunted, Bungie, accessed 20 November 2019
+                <br/>
+                <br/>
+                Video: "Bungie Vidoc: The Moon and Beyond", Bungie, Accessed 21 November 2019
+                        https://www.youtube.com/watch?v=mEvVKCKdtfw
+                <br/>
+                <br/>
+                [1]: Bungie, Accessed 20 November 2019, 
+                     https://www.playstation.com/en-us/games/destiny-2-ps4/shadowkeep/
+                <br/>
+                <br/>
+                [2]: Destiny 2, Bungie, Accessed 20 November 2019,
+                     https://www.forbes.com/sites/paultassi/2019/10/04/the-only-three-bad-things-about-destiny-2-shadowkeep/#3337e3bb6422   
+                <br/> 
+                <br/>
+                [3]: Bungie, Activision, High Moon Studios, Accessed 20 November 2019, 
+                     https://www.polygon.com/2019/11/21/20976774/destiny-2-season-of-dawn-patch-note-solar-subclass-hammer-golden-gun-dawnblade  
+                <br/>
+                <br/>
+                [4]: Destiny 2, Bungie, Activision, High Moon Studios, Accessed 20 November 2019,
+                     https://www.playstation.com/en-us/games/destiny-2-ps4/overview/           
+            </p>
+        </div>
+    </body>
+</html>
