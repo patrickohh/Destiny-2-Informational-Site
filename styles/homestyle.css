@@ -58,7 +58,7 @@ like a paragraph tag, and no text decoration such as a underline or overline */
 /*Ref:https://www.w3schools.com/howto/howto_js_slideshow.asp; Sets position property so that content is 
 relative to its normal position*/
 .image-carousel {
-    width:cover;
+    width:100%;
     position: relative;
     margin: auto;
 }
