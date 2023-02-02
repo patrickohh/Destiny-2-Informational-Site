@@ -69,6 +69,10 @@ relative to its normal position*/
     width:100%;
 }
 
+.image_slides {
+    width:100%;
+}
+
 #slide1 {
     display: block;
 }
